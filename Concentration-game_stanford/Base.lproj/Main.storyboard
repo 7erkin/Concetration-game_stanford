@@ -173,7 +173,7 @@
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="ez0-sI-tyt"/>
-                                    <constraint firstAttribute="width" constant="171" id="yUm-c6-kF3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="yUm-c6-kF3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -182,6 +182,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="7z3-Fb-A1x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="250" constant="223" id="6Kc-fh-plp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7z3-Fb-A1x" secondAttribute="trailing" constant="20" id="Cgc-om-yBy"/>
                             <constraint firstItem="7z3-Fb-A1x" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZoT-nd-JC8"/>
                             <constraint firstItem="pyr-5l-aLy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="g5e-zx-yNZ"/>
