@@ -14,6 +14,7 @@
 		7C481D5B23EE1E8E00E27B41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C481D5A23EE1E8E00E27B41 /* Assets.xcassets */; };
 		7C481D5E23EE1E8E00E27B41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C481D5C23EE1E8E00E27B41 /* LaunchScreen.storyboard */; };
 		7C481D6623EE215700E27B41 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C481D6523EE215700E27B41 /* Game.swift */; };
+		7C481D6823EEB07500E27B41 /* ThemeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C481D6723EEB07500E27B41 /* ThemeProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7C481D5D23EE1E8E00E27B41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C481D5F23EE1E8E00E27B41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C481D6523EE215700E27B41 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		7C481D6723EEB07500E27B41 /* ThemeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				7C481D5123EE1E8D00E27B41 /* AppDelegate.swift */,
 				7C481D5323EE1E8D00E27B41 /* SceneDelegate.swift */,
 				7C481D6523EE215700E27B41 /* Game.swift */,
+				7C481D6723EEB07500E27B41 /* ThemeProvider.swift */,
 				7C481D5523EE1E8D00E27B41 /* GameViewController.swift */,
 				7C481D5723EE1E8D00E27B41 /* Main.storyboard */,
 				7C481D5A23EE1E8E00E27B41 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 				7C481D5223EE1E8D00E27B41 /* AppDelegate.swift in Sources */,
 				7C481D5423EE1E8D00E27B41 /* SceneDelegate.swift in Sources */,
 				7C481D6623EE215700E27B41 /* Game.swift in Sources */,
+				7C481D6823EEB07500E27B41 /* ThemeProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

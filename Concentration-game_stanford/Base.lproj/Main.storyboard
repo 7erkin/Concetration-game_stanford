@@ -15,8 +15,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2gr-ET-sdT" userLabel="Footer">
+                                <rect key="frame" x="20" y="826" width="374" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flips: 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-no-JLQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.94333755969999999" green="0.70608137810000005" blue="0.40393524380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7z3-Fb-A1x">
+                                        <rect key="frame" x="85" y="0.0" width="194" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <state key="normal" title="New Game"/>
+                                        <connections>
+                                            <action selector="onNewGameButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MyA-zo-ups"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibe-fz-J90">
+                                        <rect key="frame" x="289" y="0.0" width="85" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.94333755969999999" green="0.70608137810000005" blue="0.40393524380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Halloween" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3I-h4-k54">
+                                <rect key="frame" x="139.5" y="44" width="135.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.94333755969999999" green="0.70608137810000005" blue="0.40393524380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pyr-5l-aLy" userLabel="CardBoard">
-                                <rect key="frame" x="20" y="44" width="374" height="430"/>
+                                <rect key="frame" x="20" y="88" width="374" height="430"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qp4-jS-uSD" userLabel="CardRow">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
@@ -27,7 +60,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="Sfd-zC-rCg"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <connections>
                                                     <action selector="onCardTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uuW-I1-v4i"/>
                                                 </connections>
@@ -38,7 +71,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="i8W-qn-3ga"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <connections>
                                                     <action selector="onCardTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XwV-MK-9Um"/>
                                                 </connections>
@@ -49,7 +82,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="7xI-Bp-Fh2"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <connections>
                                                     <action selector="onCardTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XKa-Uh-tJU"/>
                                                 </connections>
@@ -60,7 +93,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="m0B-Kk-7Ta"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <connections>
                                                     <action selector="onCardTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1mC-XR-iZn"/>
                                                 </connections>
@@ -76,7 +109,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="IkD-hw-eaq"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <connections>
                                                     <action selector="onCardTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eLE-qU-AV6"/>
                                                 </connections>
@@ -87,7 +120,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="bWW-gX-iAd"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <connections>
                                                     <action selector="onCardTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqr-rk-iDy"/>
                                                 </connections>
@@ -98,7 +131,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="fWQ-jr-N5H"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <connections>
                                                     <action selector="onCardTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zmX-BY-2s4"/>
                                                 </connections>
@@ -109,7 +142,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="pdQ-7n-UYC"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <connections>
                                                     <action selector="onCardTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uUN-Ju-Fk4"/>
                                                 </connections>
@@ -125,7 +158,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="HzN-Uh-hXs"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <connections>
                                                     <action selector="onCardTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DKN-T3-uip"/>
                                                 </connections>
@@ -136,7 +169,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="GKU-H1-Fjb"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <connections>
                                                     <action selector="onCardTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CdD-E8-Dbd"/>
                                                 </connections>
@@ -147,7 +180,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="ZQ8-Cl-rkf"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <connections>
                                                     <action selector="onCardTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Q8-h1-CqN"/>
                                                 </connections>
@@ -158,7 +191,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="UTE-XY-Lgj"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <connections>
                                                     <action selector="onCardTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CiA-CX-a2z"/>
                                                 </connections>
@@ -174,7 +207,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="z23-oP-ynN"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <connections>
                                                     <action selector="onCardTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qq3-Dy-vJu"/>
                                                 </connections>
@@ -185,7 +218,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="EQP-6G-fkU"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <connections>
                                                     <action selector="onCardTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RCh-Wu-3qa"/>
                                                 </connections>
@@ -196,7 +229,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="Olf-tO-20L"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <connections>
                                                     <action selector="onCardTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HU3-gc-Tav"/>
                                                 </connections>
@@ -207,7 +240,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="bro-K2-gFP"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <connections>
                                                     <action selector="onCardTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wGV-nd-hVI"/>
                                                 </connections>
@@ -216,33 +249,25 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7z3-Fb-A1x">
-                                <rect key="frame" x="223" y="814" width="171" height="48"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="ez0-sI-tyt"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="yUm-c6-kF3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <state key="normal" title="New Game"/>
-                                <connections>
-                                    <action selector="onNewGameButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MyA-zo-ups"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="7z3-Fb-A1x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="250" constant="223" id="6Kc-fh-plp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7z3-Fb-A1x" secondAttribute="trailing" constant="20" id="Cgc-om-yBy"/>
-                            <constraint firstItem="7z3-Fb-A1x" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZoT-nd-JC8"/>
-                            <constraint firstItem="pyr-5l-aLy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="g5e-zx-yNZ"/>
-                            <constraint firstItem="pyr-5l-aLy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="j1z-ad-kp5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pyr-5l-aLy" secondAttribute="trailing" constant="20" id="lc1-wF-QYy"/>
+                            <constraint firstItem="L3I-h4-k54" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8u3-Vs-rmE"/>
+                            <constraint firstItem="L3I-h4-k54" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="B3A-eW-9HG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pyr-5l-aLy" secondAttribute="trailing" constant="20" id="I1f-BS-6FG"/>
+                            <constraint firstItem="2gr-ET-sdT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JpD-Vn-HIZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2gr-ET-sdT" secondAttribute="trailing" constant="20" id="QK9-od-9qb"/>
+                            <constraint firstItem="pyr-5l-aLy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WVv-03-eIg"/>
+                            <constraint firstItem="pyr-5l-aLy" firstAttribute="top" secondItem="L3I-h4-k54" secondAttribute="bottom" constant="8" id="jHP-ec-Oqo"/>
+                            <constraint firstItem="2gr-ET-sdT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xXl-A4-RGn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="flipCountLabel" destination="c4I-no-JLQ" id="cAb-ar-yP7"/>
+                        <outlet property="newGameButton" destination="7z3-Fb-A1x" id="xua-Or-bca"/>
+                        <outlet property="scoreLabel" destination="Ibe-fz-J90" id="ChN-QO-K8s"/>
+                        <outlet property="themeNameLabel" destination="L3I-h4-k54" id="Le7-yh-jtZ"/>
                         <outletCollection property="cardRows" destination="qp4-jS-uSD" collectionClass="NSMutableArray" id="9Mb-rB-xqA"/>
                         <outletCollection property="cardRows" destination="u8I-oN-AyT" collectionClass="NSMutableArray" id="23q-SC-cea"/>
                         <outletCollection property="cardRows" destination="aBx-JI-hZe" collectionClass="NSMutableArray" id="owS-lQ-qYc"/>
