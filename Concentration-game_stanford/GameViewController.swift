@@ -18,7 +18,7 @@ class GameViewController: UIViewController {
         return cardRows.reduce([UIView](), { $0 + $1.subviews }).map({ $0 as! UIButton })
     }()
     
-    private var gameTheme: Theme!
+    var gameTheme: Theme!
     private var cardEmojies = [Int:String]()
     @IBOutlet var cardRows: [UIStackView]!
     @IBOutlet var newGameButton: UIButton!
@@ -61,7 +61,6 @@ class GameViewController: UIViewController {
     }
     
     private func setupUI() {
-        gameTheme = ThemeProvider.getRandomTheme()
         view.backgroundColor = gameTheme.backgroundColor
         newGameButton.backgroundColor = gameTheme.newGameButtonColor
         cards.forEach({ $0.backgroundColor = gameTheme.cardColor })

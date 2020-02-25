@@ -19,7 +19,7 @@ struct Theme {
 }
 
 struct ThemeProvider {
-    static private var themes: [Theme] = [
+    static var themes: [Theme] = [
         Theme(
             name: "Animals",
             emojies: ["🐶", "🐷", "🐸", "🦋", "🐙", "🐠", "🐼", "🐅"],
