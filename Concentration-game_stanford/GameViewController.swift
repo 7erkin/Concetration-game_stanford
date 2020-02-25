@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GameViewController: UIViewController {
+class GameViewController: UIViewController, UISplitViewControllerDelegate {
     private lazy var game: Game = {
         let cardsCount = self.cardRows.reduce(0, { $0 + $1.subviews.count })
         return Game(numberOfPairs: cardsCount / 2)
@@ -18,7 +18,12 @@ class GameViewController: UIViewController {
         return cardRows.reduce([UIView](), { $0 + $1.subviews }).map({ $0 as! UIButton })
     }()
     
-    var gameTheme: Theme!
+    var gameTheme: Theme! {
+        didSet {
+            updateView()
+        }
+    }
+    
     private var cardEmojies = [Int:String]()
     @IBOutlet var cardRows: [UIStackView]!
     @IBOutlet var newGameButton: UIButton!
@@ -35,18 +40,23 @@ class GameViewController: UIViewController {
     
     @IBAction func onNewGameButtonTouched(_ sender: UIButton) {
         game.startNewGame()
-        setupUI()
-        updateViewWithModel()
+        updateView()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updateView()
+    }
+    
+    private func updateView() {
+        guard gameTheme != nil else { return }
+        
         setupUI()
         updateViewWithModel()
     }
     
-    func updateViewWithModel() {
+    private func updateViewWithModel() {
         flipCountLabel.text = "Flips: \(game.flipCount)"
         scoreLabel.text = "Score: \(game.score)"
         for i in cards.indices {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lU7-au-s6G">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dit-Ek-xtw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -15,35 +15,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxl-sd-TtE">
-                                <rect key="frame" x="141" y="299" width="137" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Animals"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="Choose Theme" id="ndy-Hj-EAQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HV5-uH-jo9">
-                                <rect key="frame" x="166" y="395" width="82" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Balls"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="Choose Theme" id="zxG-cE-Ai1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meL-Td-n6o">
-                                <rect key="frame" x="157" y="493" width="101" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Faces"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="Choose Theme" id="67g-JW-a4W"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="cEd-yZ-og5">
+                                <rect key="frame" x="138.5" y="285" width="137" height="380"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxl-sd-TtE">
+                                        <rect key="frame" x="0.0" y="0.0" width="137" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Animals"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Choose Theme" id="ndy-Hj-EAQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HV5-uH-jo9">
+                                        <rect key="frame" x="0.0" y="160" width="137" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Balls"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Choose Theme" id="zxG-cE-Ai1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meL-Td-n6o">
+                                        <rect key="frame" x="0.0" y="320" width="137" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Faces"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Choose Theme" id="67g-JW-a4W"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cEd-yZ-og5" firstAttribute="centerY" secondItem="MAV-pT-IQi" secondAttribute="centerY" id="VkR-5e-KTZ"/>
+                            <constraint firstItem="cEd-yZ-og5" firstAttribute="centerX" secondItem="MAV-pT-IQi" secondAttribute="centerX" id="Wc2-9T-ZB1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MAV-pT-IQi"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mzc-wa-jMS"/>
@@ -322,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1655.072463768116" y="146.65178571428569"/>
+            <point key="canvasLocation" x="842" y="975"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mJK-kd-sVq">
@@ -342,8 +348,21 @@
             </objects>
             <point key="canvasLocation" x="-68.115942028985515" y="146.65178571428569"/>
         </scene>
+        <!--Split View Controller-->
+        <scene sceneID="du4-hv-z6d">
+            <objects>
+                <splitViewController id="Dit-Ek-xtw" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="lU7-au-s6G" kind="relationship" relationship="masterViewController" id="HI3-C8-JaB"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="detailViewController" id="nGX-5W-FPu"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXY-8X-mGm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-822" y="975"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="67g-JW-a4W"/>
+        <segue reference="nGX-5W-FPu"/>
     </inferredMetricsTieBreakers>
 </document>
